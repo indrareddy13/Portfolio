@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indra Reddy Portfolio</title>
+    <title>Indra Reddy</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Font Awesome Icons -->
@@ -13,9 +13,13 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            margin: 0;
+            margin: 15px;
             padding: 0;
             background-color: #f8f9fa;
+        }
+
+        div{
+            border-radius: 10px;
         }
 
         header {
@@ -23,6 +27,7 @@
             color: #fff;
             text-align: center;
             padding: 2em 0;
+            border-radius: 10px;
         }
 
         section {
@@ -33,7 +38,11 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2, h3 {
+        h1{
+            color: white;
+        }
+
+        h2, h3 {
             color: #343a40;
         }
 
@@ -51,11 +60,16 @@
             margin-bottom: 20px;
         }
 
+        .education{
+            align-items: center;
+        }
+
         footer {
             text-align: center;
             padding: 1em;
             background-color: #343a40;
             color: #fff;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -63,13 +77,113 @@
 
     <header>
         <h1>Indra Reddy</h1>
-        <p>Web Developer | Designer</p>
+        <p>"Engineer" | "Innovating in Software and Electronics"</p>
     </header>
 
-    <section id="about">
+    <section>
         <div class="container">
             <h2>About Me</h2>
-            <p>This is a brief introduction about yourself. You can talk about your skills, experience, and interests.</p>
+            <div style="display: flex; justify-content: space-around;margin: 15px;">
+                <div>
+                    <img src="https://github.com/indrareddy13/Portfolio/blob/main/pic.jpg?raw=true" alt="Profile Picture" style="height: 300px;">
+                </div>
+                <div style="margin-left: 20px;">
+                    <p>Hey everyone! I'm Indra Reddy, a tech enthusiast wearing two hats. By day, I dive deep into the world of Full Stack Development, weaving together seamless and innovative web applications. My passion lies in both front-end design, creating user interfaces that captivate, and back-end development, ensuring robust functionality.
+                        <br><br>
+                        But that's not all—I also have a knack for the complexities of VLSI Design and Verification. In the silicon realm, I thrive on the challenges of ensuring that digital circuits work flawlessly. From conceptualizing designs to rigorous testing, I find joy in the precision required for this intricate process.
+                        <br><br>
+                        Based in the bustling tech scene, I'm always exploring new technologies, attending conferences, and pushing the boundaries of what's possible in both software and hardware domains. Excited to connect with fellow tech enthusiasts and share experiences across the full spectrum of development and design
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <section  class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h5>PSCMR College of Engineering and Technology  <i>(2021 - 2024)</i></h5>
+                    <pre>B.Tech(ECE)  <br>CGPA/Percentage : <b>7.23</b></pre>
+                </li>
+                <li>
+                    <h5>DJR College of Engineering and Technology  <i>(2018 - 2021)</i></h5>
+                    <pre>Diploma(ECE)  <br>CGPA/Percentage : <b>80.4%</b> </pre>
+                </li>
+                <li>
+                    <h5>Z P High School  <i>(2017 - 2018)</i></h5>
+                    <pre>SSC<br>CGPA/Percentage : <b>9.8</b></pre>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Skills</h2>
+            <div style="display: flex; justify-content: space-evenly;">
+                <div>
+                    <ul>
+                        <li><b>Software Skills</b>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>C</li>
+                                <li>Python</li>
+                                <li>React JS</li>
+                                <li>Node JS</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                    <li><b>Core Skills</b>
+                        <ul>
+                            <li>Verilog</li>
+                            <li>VHDL</li>
+                            <li>Arduino</li>
+                            <li>PCB Designing</li>
+                            <li>TCL</li>
+                        </ul>
+                    </li>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><b>Tools and Technologies</b>
+                            <ul>
+                                <li>Visual Studio</li>
+                                <li>Xilinx</li>
+                                <li>GitHub</li>
+                                <li>Arduino</li>
+                                <li>LaTex</li>
+                                <li>MS Office</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+                
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Internships</h2>
+            <ul>
+                <li>MERN Full Stack Development - NULL Class Tech</li>
+                <li>Web Development - Swecha AP</li>
+                <li>VLSI RTL Design - BIST Tech</li>
+                <li>VLSI Design - Maven Silicon </li>
+                <li>Embedded Systems - Ramson Techlabs</li>
+            </ul>
         </div>
     </section>
 
@@ -80,22 +194,38 @@
             <!-- Filter buttons -->
             <div class="filter-btn-group">
                 <button class="btn btn-dark" data-filter="*">All</button>
-                <button class="btn btn-dark" data-filter=".web">Web</button>
-                <button class="btn btn-dark" data-filter=".mobile">Mobile</button>
+                <button class="btn btn-dark" data-filter=".web">Software</button>
+                <button class="btn btn-dark" data-filter=".mobile">Electronics</button>
             </div>
 
             <!-- Project grid -->
             <div class="row" id="project-grid">
                 <div class="col-md-4 project web">
-                    <img src="project1.jpg" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1.</p>
+                    <img src="data:image/png;base64,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" alt="Project 1" style="height: 100px;width: 100px;">
+                    <h3>Web pages in BalaSwecha- an Educational Platform</h3>
+                    <p>Balaswecha is an emerging educational platform designed for every student, aiming to facilitate a better
+                        understanding of NCERT concepts through engaging simulations. This project encompasses a collection
+                        of web pages dedicated to providing comprehensive explanations of NCERT topics for secondary school
+                        students.</p>
                 </div>
 
                 <div class="col-md-4 project mobile">
-                    <img src="project2.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNGGj-GrPSO9wzfs8h4hFAn3e6xDsh9-46zw&usqp=CAU" alt="Project 2" style="height: 100px;width: 100px;">
+                    <h3>Centralized Monitoring System for Street Light Fault Detection and Location Tracking</h3>
+                    <p>The Street Light Fault Detection and Location Tracking System is a smart solution that monitors street
+                        lights in real-time using sensors and wireless communication. It swiftly identifies faults, like burnedout bulbs, and precisely tracks each light’s location. With an easy-to-use dashboard and automated
+                        reporting, this system ensures quick responses for efficient maintenance, contributing to improved urban
+                        lighting reliability and sustainability</p>
+                </div>
+
+                <div class="col-md-4 project mobile">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNGGj-GrPSO9wzfs8h4hFAn3e6xDsh9-46zw&usqp=CAU" alt="Project 2" style="height: 100px;width: 100px;">
+                    <h3>Home Automation Using IOT</h3>
+                    <p>In this project, we learned how to create an IoT-based Home Automation system using Blynk and
+                        NodeMCU ESP8266. Home Automation entailed controlling lighting, climate, entertainment systems,
+                        and appliances without the need for manual switches. Additionally, it could include home security
+                        features such as access control and alarm systems. When these home devices were connected to the
+                        Internet, they became integral components of the Internet of Things (IoT) ecosystem.</p>
                 </div>
 
                 <!-- Add more projects as needed -->
@@ -103,17 +233,28 @@
         </div>
     </section>
 
+    <section>
+        <div class="container">
+            <h2>ACHIEVEMENTS</h2>
+            <ul>
+                <li>Ranked in National in NMMS( National Means cum Merit Scholarship Examination) 2015</li>
+                <li>Got Selected for SDF Vidhyadhan Scholarship 2018</li>
+                <li>Got Selected for HDFC ECS Scholarship 2019</li>
+            </ul>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: linkedin.com/in/yourusername</p>
-            <p>GitHub: github.com/yourusername</p>
+            <p>Mail: <a href="mailto:indrareddy2003@gmail.com">indrareddy2003@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/indrareddy13/">indrareddy13</a></p>
+            <p>GitHub: <a href="https://github.com/indrareddy13">indrareddy13</a></p>
         </div>
     </section>
 
     <footer>
-        &copy; 2024 Your Name
+        &copy; 2024 Indra Reddy
     </footer>
 
     <!-- Bootstrap JS and Popper.js -->
@@ -122,6 +263,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Isotope JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
     <!-- Custom JavaScript -->
     <script>
         $(document).ready(function () {
@@ -138,5 +280,6 @@
             });
         });
     </script>
+
 </body>
 </html>
