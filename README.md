@@ -17,7 +17,7 @@ Hey everyone! I'm Indra Reddy, a passionate tech enthusiast with a focus on Full
 ## Education
 - **PSCMR College of Engineering and Technology (2021 - 2024)**
   - B.Tech in Electronics and Communication Engineering
-  - CGPA: 7.23
+  - CGPA: 7.5
 
 - **DJR College of Engineering and Technology (2018 - 2021)**
   - Diploma in Electronics and Communication Engineering
